@@ -1,0 +1,113 @@
+h1 {
+  font-weight: 700;
+  font-size: 38px;
+  color: #171941;
+  font-weight: bold;
+}
+
+/* Card */
+.card {
+  //width: 200px;
+  height: 300px;
+  margin: 10px;
+  background-color: #fb92291a;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+
+.col-md-3 {
+    flex: 0 0 auto;
+    width: 15%;
+}
+
+/* Card Header*/
+.card-header {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-img {
+  min-width: 100%;
+  width: auto;
+  height: 100%;
+}
+
+/* Card Body */
+.card-body {
+  height: 170px;
+  padding: 35px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.card-nome {
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.card-preço {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.card-texto {
+  font-size: 12px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+/* Card Footer */
+.card-ver {
+  margin-top: 10px;
+  text-align: center;
+  background-color: rgba(221, 148, 32, 0.051);
+  padding: inherit;
+
+}
+
+.card-footer a {
+  color: #fff;
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+/* Cores Cards */
+.card-1 .card-footer {
+  background-color: #2740d1;
+}
+
+.card-1 .card-local {
+  color: #2740d1;
+}
+
+.card-2 .card-footer {
+  background-color: #d12761;
+}
+
+.card-2 .card-local {
+  color: #d12761;
+}
+
+.card-3 .card-footer {
+  background-color: #00c702;
+}
+
+.card-3 .card-local {
+  color: #00c702;
+}
+
+/* Animação Hover */
+.card:hover {
+  transform: scale3d(1.1, 1.1, 1);
+}

@@ -1,0 +1,92 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+}
+.logged-content {
+  padding: 10px 180px 10px 180px;
+
+  @media only screen and (max-width: 540px) {
+    padding: 10px 40px 10px 10px;
+  }
+}
+
+.buttons {
+  background: #f29433;
+  background-image: linear-gradient(to bottom left, #f29433, #ec250d, #f29433);
+  background-size: 210% 210%;
+  background-position: 100% 0;
+  background-color: #f29433;
+  transition: all 0.15s ease;
+  box-shadow: none;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+  height: 40px;
+  font-size: 15px;
+  width: 120px;
+  font-weight: bold;
+  padding-right: 30px;
+}
+
+h2 {
+  color: #f29433;
+  font-weight: 700;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.dzs {
+  font-family: Poppins, sans-serif;
+  line-height: 1.5;
+  color: #525f7f;
+  text-align: left;
+  font-weight: bold;
+  position: relative;
+  line-height: 20px;
+}
+
+.btn.btn-secondary {
+  background: #f1f1f1;
+  background-size: 210% 210%;
+  background-position: 100% 0;
+  background-color: #62767f;
+  transition: all 0.15s ease;
+  box-shadow: none;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+  height: 48px;
+  font-size: 15px;
+  width: 120px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn-light {
+  background: #f1f1f1;
+  background-size: 210% 210%;
+  background-position: 100% 0;
+  background-color: #6e828b;
+  transition: all 0.15s ease;
+  box-shadow: none;
+  color: #f29433;
+  border-radius: 30px;
+  border: none;
+  height: 40px;
+  font-size: 15px;
+  width: 10px;
+  font-weight: bold;
+}
+.material-icons-outlined {
+  color: white;
+}
+.btn.btn-secondary:hover {
+transform: scale3d(1.1, 1.1, 1);}
+

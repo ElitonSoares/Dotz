@@ -1,0 +1,54 @@
+<form [formGroup]="formulario" (submit)="fazerLogin()" #formDir="ngForm">
+  <div class="form-group d-flex">
+    <label for="email" class="control-label">
+      <i
+        ><mat-icon
+          ><span class="material-icons-outlined"> email </span></mat-icon
+        ></i
+      >
+    </label>
+    <input
+      type="text"
+      class="form-control"
+      id="email"
+      placeholder="email"
+      formControlName="email"
+      required email
+    />
+    <div *ngIf="email.invalid && formDir.submitted" class="validation-errors">
+      <p *ngIf="email.errors?.['required']">Necessário inserir email!</p>
+    </div>
+  </div>
+  <br />
+  <div class="form-group d-flex">
+    <label for="password">
+      <i
+        ><mat-icon
+          ><span class="material-icons-outlined"> password </span></mat-icon
+        ></i
+      >
+      <i class="fa-thin fa-eye"></i>
+    </label>
+    <input
+      type="password"
+      class="form-control"
+      id="password"
+      placeholder="senha"
+      formControlName="password"
+    />
+    <div *ngIf="password.invalid && formDir.submitted" class="validation-errors2">
+      <p *ngIf="password.errors?.['required']">Necessário inserir senha!</p>
+    </div>
+  </div>
+  <br />
+  <div class="text-center mb-5 d-flex justify-content-between">
+    <button class="btn btn-light" routerLink="/login/registrar" type="button">
+      Cadastrar
+    </button>
+    <i class="material-icons iconsT2">folder</i>
+    <button class="buttons" [disabled]="loading" >
+      Entrar
+      <i class="material-icons iconsT">send</i>
+    </button>
+  </div>
+</form>

@@ -1,0 +1,117 @@
+<div class="form">
+  <h2 class="">Meus Dados</h2>
+  <img [src]="userLogged.avatar" class="img1 d-flex" />
+  <form [formGroup]="formulario" #formDr="ngForm">
+    <div class="form1">
+      <label for="name"
+        ><i
+          ><mat-icon
+            ><span class="material-icons-outlined"> people </span></mat-icon
+          ></i
+        ></label
+      >
+      <div class="input">
+        <input type="text" class="input" id="name" formControlName="name" />
+      </div>
+      <div>
+        <img src="" alt="" />
+        <label for="email"
+          ><i
+            ><mat-icon
+              ><span class="material-icons-outlined"> email </span></mat-icon
+            ></i
+          ></label
+        >
+        <div class="input">
+          <input type="text" class="input" id="email" formControlName="email" />
+        </div>
+      </div>
+      <div>
+        <label for="password"
+          ><i
+            ><mat-icon
+              ><span class="material-icons-outlined"> password </span></mat-icon
+            ></i
+          ></label
+        >
+        <div class="input">
+          <input
+            type="password"
+            class="input"
+            id="password"
+            formControlName="password"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="col"></div>
+  </form>
+  <form [formGroup]="formulario" #formDr="ngForm">
+    <div class="form2">
+      <label for="address "
+        ><i
+          ><mat-icon
+            ><span class="material-icons-outlined">
+              import_contacts
+            </span></mat-icon
+          ></i
+        ></label
+      >
+      <div class="input">
+        <input
+          type="text"
+          class="input"
+          id="address "
+          formControlName="address"
+        />
+      </div>
+      <div>
+        <label for="city"
+          ><i
+            ><mat-icon
+              ><span class="material-icons-outlined">
+                location_city
+              </span></mat-icon
+            ></i
+          ></label
+        >
+        <div class="input">
+          <input type="text" class="input" id="city" formControlName="city" />
+        </div>
+      </div>
+      <div>
+        <label for="state"
+          ><i
+            ><mat-icon
+              ><span class="material-icons-outlined"> home </span></mat-icon
+            ></i
+          ></label
+        >
+        <div class="input">
+          <input
+            type="state"
+            class="input"
+            id="state"
+            formControlName="state"
+          />
+        </div>
+      </div>
+    </div>
+    <button (click)="edit()" class="buttons">Salvar</button>
+    <button class="btn btn-danger" (click)="fecharConta()">
+      Deixar de ser cliente DOTZ!
+    </button>
+  </form>
+</div>
+
+<ng-template #deleteModal>
+  <div class="modal-body text-center">
+    <p>Tem certeza que não deseja mais ser cliente DOTZ?</p>
+    <button type="button" class="btn btn-default" (click)="onConfirmDelete()">
+      Sim, não quero mais ser cliente DOTZ!
+    </button>
+    <button type="button" class="btn btn-primary" (click)="onDeclineDelete()">
+      Não
+    </button>
+  </div>
+</ng-template>

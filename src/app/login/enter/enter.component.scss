@@ -1,0 +1,51 @@
+.btn-light{
+  background: #fffdfc;
+  background-image: linear-gradient(to bottom left, #efe9e2, #eaeaea, #d5d5d5);
+  background-size: 210% 210%;
+  background-position: 100% 0;
+  background-color: #ffffff;
+  transition: all 0.15s ease;
+  box-shadow: none;
+  color: #f29433;
+  border-radius: 30px;
+  border: none;
+  height: 40px;
+  font-size: 15px;
+  width: 120px;
+  font-weight: bold;
+  padding-right: 40px;
+}
+
+.iconsT{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(680%);
+    color: #ffffff;
+  }
+  .iconsT2{
+    top: 50%;
+    right: 10px;
+    transform: translateX(-120%);
+    color: #f29433;
+    padding: 10px 5px 0px 0px;
+  }
+
+  .validation-errors{
+    color: red;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    padding-right: 30px;
+    padding-left: 5px;
+    transform: translateY(650%);
+    border-radius: 10px;
+  }
+  .validation-errors2{
+    color: red;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    padding-right: 27px;
+    transform: translateY(700%);
+  }

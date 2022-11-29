@@ -1,0 +1,27 @@
+<h1 class="title">Meus Pedidos</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-sm-12 card" *ngFor="let pedido of pedidos">
+            <div class="art">
+              <div class="">Pedido #{{ pedido.id }}</div>
+              <div class="date">
+                {{ pedido.data | date: "dd/MM/yyyy   HH:mm" }}
+              </div>
+              <div class="price">DZ {{ pedido.price }}</div>
+              <div class="status">{{ pedido.status }}</div>
+              <div (click)="cancelarPedido(pedido)" class="cancel">Cancelar Pedido</div>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #deleteModal>
+  <div class="modal-body text-center">
+    <p>Tem certeza que deseja cancelar esse pedido?</p>
+    <button type="button" class="btn btn-default" (click)="onConfirmDelete()">
+      Sim, quero cancelar esse pedido!
+    </button>
+    <button type="button" class="btn btn-primary" (click)="onDeclineDelete()">
+      Não!
+    </button>
+  </div>
+</ng-template>

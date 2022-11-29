@@ -1,0 +1,95 @@
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" height="50px">
+    <div class="container-fluid">
+      <a>
+        <div class="logo">
+          <form class="d-flex">
+            <button class="btn btn-outline logged-content">
+              <img
+                src="./assets/imgs/logo-dotz.png"
+                width="60"
+                height="40"
+                href="javascript:void(0)"
+                routerLink="/logged"
+              />
+            </button>
+          </form>
+        </div>
+      </a>
+      <div class="space">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navigate-options">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <div class="saldo">
+                <li class="nav-item">
+                  <p class="nav-link dzs" href="javascript:void(0)">
+                    Saldo: DZ {{ userLogged.balance | number}}
+                  </p>
+                </li>
+              </div>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  routerLink="/logged"
+                  href="javascript:void(0)"
+                  >Página Inicial</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="javascript:void(0)"
+                  routerLink="produtos"
+                  >Produtos</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  {{ userLogged.name }}
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item" href="#" routerLink="perfil"
+                      >Perfil</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#" routerLink="pedidos">Meus Pedidos</a></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="javascript:void(0)"
+                      (click)="logOut()"
+                      >Sair</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>

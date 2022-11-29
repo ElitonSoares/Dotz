@@ -1,0 +1,30 @@
+.navigate-options{
+  padding: 100px;
+  font-weight: normal;
+
+  //margin: 0% 2% 0% 0%;
+}
+.row {
+  padding: 15px;
+  margin: 0% 2% 0% 0%;
+}
+.navbar>.container-fluid
+ {
+  background-color: #f29433;
+  height: 80px;
+  //max-width: 100%px;
+  //width: 100%;
+
+ }
+ .navbar-expand-lg {
+  padding: inherit;
+ }
+ .navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  justify-content: space-around;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+  opacity: 0,7;
+}
